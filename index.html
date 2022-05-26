@@ -1,61 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro component with sign up form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Intro component with sign up form</title>
 
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/styles.css" /> 
-  <script src="js/script.js" defer></script>
-  
-</head>
-<body>
-  <main>
-    <div class="content-wrapper">
-      <div class="heading-wrapper">
-        <h1>Learn to code by watching others</h1>
-        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-          but understanding how developers think is invaluable. </p>
-      </div>
-      <div class="form-wrapper">
-        <div class="try-pricing">
-          <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="content-wrapper">
+        <div class="heading-wrapper">
+          <h1>Learn to code by watching others</h1>
+          <p>
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
         </div>
-        <form name="registration-form" class="registration-form">
-          <label for="first-name"></label>
-          <input type="text" placeholder="First Name" name="first-name" id="first-name" required aria-required="true">
+        <div class="form-wrapper">
+          <div class="try-pricing">
+            <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+          </div>
+          <form name="registration-form" class="registration-form">
+            <div class="input-wrapper">
+              <div class="input input-fname">
+                <img
+                  src="images/icon-error.svg"
+                  alt=""
+                  class="error-icon error error-first"
+                />
+                <label for="first-name"></label>
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  name="first-name"
+                  id="first-name"
+                  required
+                  aria-required="true"
+                />
+                <p class="error-text error-empty">First Name cannot be empty</p>
+              </div>
 
-          <label for="last-name"></label>
-          <input type="text" placeholder="Last Name" name="last-name" id="last-name" required aria-required="true"> 
-          
-          <label for="email"></label>
-          <input type="text" placeholder="Email Address" name="email" id="email" required aria-required="true">
+              <div class="input input-lname">
+                <img
+                  src="images/icon-error.svg"
+                  alt=""
+                  class="error-icon error error-last"
+                />
+                <label for="last-name"></label>
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  name="last-name"
+                  id="last-name"
+                  required
+                  aria-required="true"
+                />
+                <p class="error-text error-empty">Last Name cannot be empty</p>
+              </div>
 
-          <label for="password"></label>
-          <input type="text" placeholder="Password" name="password" id="password" required aria-required="true">
+              <div class="input input-email">
+                <img
+                  src="images/icon-error.svg"
+                  alt=""
+                  class="error-icon error error-email"
+                />
+                <label for="email"></label>
+                <input
+                  type="text"
+                  placeholder="Email Address"
+                  name="email"
+                  id="email"
+                  required
+                  aria-required="true"
+                />
+                <p class="error-text error-format">
+                  Looks like this is not an email
+                </p>
+              </div>
 
-          <button type="submit" class="registerbtn">Claim your free trial</button>
-          <p class="terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>.</p>
-        </form>
+              <div class="input input-password">
+                <img
+                  src="images/icon-error.svg"
+                  alt=""
+                  class="error-icon error error-pword"
+                />
+                <label for="password"></label>
+                <input
+                  type="text"
+                  placeholder="Password"
+                  name="password"
+                  id="password"
+                  required
+                  aria-required="true"
+                />
+                <p class="error-text error-empty">Password cannot be empty</p>
+              </div>
+
+              <button type="submit" class="registerbtn">
+                Claim your free trial
+              </button>
+
+              <p class="terms">
+                By clicking the button, you are agreeing to our
+                <a href="#">Terms and Services</a>.
+              </p>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
-  </main>
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-      <a href="https://allyson-s-code.github.io/Web-Dev-Portfolio/">Allyson.</a>
-    </p>
-  </footer>
-</body>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://allyson-s-code.github.io/Web-Dev-Portfolio/"
+          >Allyson.</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>
