@@ -48,74 +48,84 @@
                 <img
                   src="images/icon-error.svg"
                   alt=""
-                  class="error-icon error error-first"
+                  class="error-icon"
+                  id="i-error-first"
                 />
-                <label for="first-name"></label>
+                <label for="first-name-field"></label>
                 <input
                   type="text"
                   placeholder="First Name"
                   name="first-name"
-                  id="first-name"
+                  id="first-name-field"
                   required
                   aria-required="true"
                 />
-                <p class="error-text error-empty">First Name cannot be empty</p>
+                <span role="alert" id="firstError" class="error-text"
+                  >First Name cannot be empty</span
+                >
               </div>
 
               <div class="input input-lname">
                 <img
                   src="images/icon-error.svg"
                   alt=""
-                  class="error-icon error error-last"
+                  class="error-icon"
+                  id="i-error-last"
                 />
-                <label for="last-name"></label>
+                <label for="last-name-field"></label>
                 <input
                   type="text"
                   placeholder="Last Name"
                   name="last-name"
-                  id="last-name"
+                  id="last-name-field"
                   required
                   aria-required="true"
                 />
-                <p class="error-text error-empty">Last Name cannot be empty</p>
+                <span role="alert" id="lastError" class="error-text"
+                  >Last Name cannot be empty</span
+                >
               </div>
 
               <div class="input input-email">
                 <img
                   src="images/icon-error.svg"
                   alt=""
-                  class="error-icon error error-email"
+                  class="error-icon"
+                  id="i-error-email"
                 />
-                <label for="email"></label>
+                <label for="email-field"></label>
                 <input
                   type="text"
                   placeholder="Email Address"
                   name="email"
-                  id="email"
+                  id="email-field"
                   required
                   aria-required="true"
                 />
-                <p class="error-text error-format">
+                <span role="alert" id="emailError" class="error-text">
                   Looks like this is not an email
-                </p>
+                </span>
               </div>
 
               <div class="input input-password">
                 <img
                   src="images/icon-error.svg"
                   alt=""
-                  class="error-icon error error-pword"
+                  class="error-icon"
+                  id="i-error-pass"
                 />
-                <label for="password"></label>
+                <label for="password-field"></label>
                 <input
                   type="text"
                   placeholder="Password"
                   name="password"
-                  id="password"
+                  id="password-field"
                   required
                   aria-required="true"
                 />
-                <p class="error-text error-empty">Password cannot be empty</p>
+                <span role="alert" id="passError" class="error-text"
+                  >Password cannot be empty</span
+                >
               </div>
 
               <button type="submit" class="registerbtn">
